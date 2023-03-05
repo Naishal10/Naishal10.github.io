@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+
+*{
+  padding:0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a.active,a.hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+p{
+
+  font-family: 'Source Serif Pro', serif;
+  font-size: 30px;
+
+}
+
+.customfooter {
+  
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font: 900 normal 3.5em 'Source Serif Pro';
+  font-weight: bold;
+}
+
+body {
+  background-color: rgb(255, 254, 249);
+  background-size: 350% 350%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 300;
+}
+
+/*Animation*/
+
+.section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*Animation Title*/
+.waviy {
+  position: relative;
+  
+}
+
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font: 'Source Serif Pro' ;
+  font-size: 55px;
+  font-weight: bolder;
+  color: #000000;
+  text-transform: uppercase;
+  animation: flip 4s infinite;
+  animation-delay: calc(.4s * var(--i))
+}
+
+
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+.newClass {
+  cursor: none;
+}
+
+/* Page 1 */
+
+
+/*ANimation word*/
+.word {
+
+  color: rgb(143, 143, 143);
+  font: 900 normal 3.5em 'sans-serif';
+  font-weight: bold;
+  
+  
+}
+
+
+
+#backgroundImage {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#myimage {
+  height: 500px;
+  max-width: 500px;
+  position: absolute;
+  top: 336px;
+  left: 0;
+}
+
+
+.centerPage1 {
+
+    
+  width:90%;
+  height: 90%;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 7px 7px 10px rgba(116, 116, 116, 0.5);
+ 
+  position: relative;
+  
+  align-content: center;
+  animation: fade-in 1s ease-out;
+  z-index: 0;
+}
+
+
+.icons{
+
+  width:80px;
+  height: 80px;
+
+  background-color: rgb(255, 254, 249);
+  border-radius: 20px;
+
+ 
+}
+
+
+
+.line {
+  border-bottom: 1px solid black;
+  width: 500px;
+  left: -10px;
+  top: -30px;
+  
+}
+.biggerline {
+  border-bottom: 1px solid black;
+  width: 650px;
+  left: -10px;
+  top: -30px;
+  
+}
+
+.listItemPos{
+  position: absolute;
+  top: 0;
+  left: 950px;
+  padding-top: 30px;
+ 
+}
+
+.listvstack{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  line-height: 40px;
+  background-color: rgb(255, 254, 249);
+  padding: 60px;
+ 
+  border-radius: 20px;
+  
+}
+
+.listItem{
+
+  font-family: 'Source Serif Pro', serif;
+  font-size: 22px;
+  width: 500px;
+  text-align: left;
+}
+
+
+.vstack{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.hstack{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.gapIcon-Info{
+  gap: 50px;
+  padding-bottom: 20px;
+}
+
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#buttonBG{
+
+  border-radius: 10px;
+  background-color: rgb(241, 234, 255);
+  max-width: 200px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 19px;
+  text-align: center;
+  left: 30%;
+
+}
+
+/*Other Page*/
+
+
+
+
+#exprianceImg {
+ 
+  border-radius: 20px;
+  width: 750px;
+  height: 500px;
+  text-align: right;
+}
+
+.titlecolor{
+  background-color: rgb(255, 254, 249);
+}
+
+.gapPG2{
+
+  gap: 200px;
+}
+.smallgapPG2{
+
+  gap: 30px;
+}
+.gapPG2Vstack{
+
+  gap: 20px;
+  padding-bottom: 100px;
+  
+}
+
+.listItemPG2{
+
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+  width: 600px;
+  text-align: left;
+}
+
+#UbuttonBG{
+
+  border-radius: 10px;
+  background-color: rgb(241, 234, 255);
+  max-width: 200px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 19px;
+  text-align: center;
+  padding-top: 10px;
+  left: 30%;
+
+}
+
+.center{
+
+  justify-content: center;
+
+}
+
+
+
+/* next Pages */
+.bg1 {
+  background-color: #ccc;
+}
+.bg2 {
+  background-color: rgb(255, 254, 249);
+}
+
+
+.spacer {
+  height: 10vh;
+  background-color: #383838;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* EDucation HTML Page */
+
+.bgImage {
+
+   background-image: url("/Education/Assets/Tri_C.jpg");
+}
+.bgImage2 {
+
+  background-image: url("/Education/Assets/OSU.jpg");
+}
+
+.blur-bg {
+ /*  background-image: url("/Education/Assets/Tri_C.jpg"); */
+ 
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.blur-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+  linear-gradient(to bottom, #18181800 0%,  #181818 100%);
+ 
+}
+ 
+
+
+
+.waviy2 {
+  position: relative;
+  margin-top: 500px;
+}
+
+
+.waviy2 span {
+  position: relative;
+  display: inline-block;
+  font: 'Source Serif Pro' ;
+  font-size: 55px;
+  font-weight: bolder;
+  color: rgb(255, 254, 249);
+  text-transform: uppercase;
+  animation: flip 4s infinite;
+  animation-delay: calc(.4s * var(--i))
+}
+
+
+.line2 {
+  border-bottom: 1px solid  rgb(255, 254, 249);
+  width: 500px;
+}
+
+
+.bg3 {
+
+  background-color: #181818 ;
+  height: 85%;
+  z-index: 0;
+}
+
+.title{
+
+  color:  rgb(255, 254, 249);
+
+}
+
+.alignmentContent{
+ 
+ align-items: center;
+}
+
+.smallgapPG2{
+
+  gap: 10px;
+}
+
+#section-1 {
+  display: block;
+}
+#section-2 {
+  display: none;
+}
+#section-3 {
+  display: none;
+}
