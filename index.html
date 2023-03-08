@@ -8,9 +8,13 @@
     <title>Personal website</title>
 
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Rounded">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 
+  
+
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -36,11 +40,12 @@
       <div class="vstack listItemPos ">
 
         <div class="hstack gapIcon-Info">
-          <div class="icons"></div>
-          <div class="icons"></div>
-          <div class="icons"></div>
-          <div class="icons"></div>
-          <div class="icons"></div>
+          
+          <img  class="icons k-hover" src="/Assets/Icons/linkedin.png" alt="linkedIn">
+          <img  class="icons k-hover" src="/Assets/Icons/github.png" alt="GitHub">
+          <img  class="icons k-hover" src="/Assets/Icons/handshake.png" alt="HandShake">
+          <img  class="icons k-hover" src="/Assets/Icons/instagram.png" alt="Instagram">
+          <img  class="icons k-hover" src="/Assets/Icons/Resume.png" alt="Resume">
         </div>
 
         <div class="listvstack ">
@@ -79,11 +84,11 @@
 
   </div>
 
-  <!-- Page 2 -->
+  <!-- Page 2 - Experiance -->
   <div class="section">
     <div class="revealUp">
 
-      <div class="hstack gapPG2">
+      <div class="hstack gapPG2 pageDisplay">
 
         <div class="vstack gapPG2Vstack center">
           <div class="waviy" >
@@ -101,24 +106,112 @@
           
           <div class="biggerline"></div>
         
-          <div class="listItemPG2"> Experience is the culmination of all the moments, sensations, and emotions that we encounter throughout our lives. It is the way we perceive the world, the people in it, and the events that shape us. It is the foundation of our understanding, wisdom, and personal growth. </div>
-          <div class="listItemPG2"> It is a reflection of the challenges we face, the joys we embrace, and the lessons we learn. Every experience, whether good or bad, shapes us into the individuals we are today. Our experiences define us, guide us, and inspire us to live a life that is unique and meaningful to us.</div>
-          <div class="listItemPG2"> NOTE: SITE under Construction!!</div>
-          <div id="UbuttonBG" class="k-hover">Show More...</div>
+          
+          <div class="listItemPG2"> Experience is a reflection of the challenges we face, the joys we embrace, and the lessons we learn. Every experience, whether good or bad, shapes us into the individuals we are today. Our experiences define us, guide us, and inspire us to live a life that is unique and meaningful to us.</div>
+
+          <div id="UbuttonBG" class="k-hover showButton" onclick="toggleShow(0)" >Show More...</div>
       </div>
 
-        <img src="/Assets/Experiance1.jpg" id="exprianceImg"> 
+        <img src="/Assets/Experiance1.jpg" id="exprianceImg" > 
 
       </div>
      
+
+      <!-- Timeline -->
+      <div class="vstack  gapPG2Vstack center displayStyle pageOffset">
+
+        <div class="hstack center"> 
+          <div class="vstack  center">
+            <div class="waviy" >
+              <span style="--i:1">E</span>
+              <span style="--i:2">X</span>
+              <span style="--i:3">P</span>
+              <span style="--i:4">E</span>
+              <span style="--i:5">R</span>
+              <span style="--i:6">I</span>
+              <span style="--i:7">E</span>
+              <span style="--i:8">N</span>
+              <span style="--i:9">C</span>
+              <span style="--i:10">E</span>
+            </div>
+            <div class="biggerline biglineOffset"></div>
+          </div>
+
+          <button id="customButton" class="material-symbols-rounded " onclick="toggleShow(0)">arrow_back</button>
+        </div>
+
+        <div class="timeline  " >
+
+          <a href="/Education/education.html">
+                
+        
+          <div class="timecontainer right k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/Experiance/Assets/MBCCGroup.png" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">MBCC Group</div>
+                      <div  class="captionTime  clr5">⦿ Technical Specialist </div>
+                      <div  class="captionTime  clr5">-------- <b>2022</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </a>
+
+          <div class="timecontainer left k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/Experiance/Assets/HomewoodSuites.jpg" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">Sunrise Hospitality</div>
+                      <div  class="captionTime  clr5">⦿ Front Desk Assitant </div>
+                      <div  class="captionTime  clr5">-------- <b>2020</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="timecontainer right k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/Experiance/Assets/HomewoodSuites.jpg" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">Self Development</div>
+                      <div  class="captionTime  clr5">⦿ Software/Game/App Developer </div>
+                      <div  class="captionTime  clr5">-------- <b>2019</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+
     </div>
   </div>
 
-  <!-- Page 3 -->
-  <div class="section bg1">
+  <!-- Page 3 - skills -->
+  <div class="section ">
     <div class="revealUp">
 
-      <div class="hstack gapPG2">
+       <div class="hstack gapPG2 pageDisplay">
 
         <img src="/Assets/Skills.jpg" id="exprianceImg"> 
 
@@ -135,23 +228,62 @@
           <div class="biggerline"></div>
         
           <div class="listItemPG2"> Skill is the mastery of an ability acquired through practice, training, and experience. It is the culmination of effort and dedication, and a testament to the human capacity for growth and development. Skills come in many forms, from the technical and intellectual to the creative and interpersonal. They enable us to perform tasks with ease and proficiency, and to adapt to different situations and challenges.</div>
-          <div class="listItemPG2"> Every skill we acquire expands our capacity to contribute to the world around us and to achieve our personal and professional goals. As a writer, my skills include storytelling, research, and editing, but I also value softer skills such as empathy, creativity, and communication, which are just as important in crafting compelling and impactful writing.</div>
+          
 
-          <div id="UbuttonBG" class="k-hover">Show More...</div>
+          <div id="UbuttonBG" class="k-hover showButton" onclick="toggleShow(1)" >Show More...</div>
       </div>
 
+      
+
+      </div>
+      
+      <div class="hstack displayStyle"> 
+        <button id="customButton" class="material-symbols-rounded " onclick="toggleShow(1)">arrow_back</button>
+        <table>
+          <caption>2019 Fourth Quarter Report</caption>
+          <thead>
+            <tr>
+              <th><!-- Intentionally Blank --></th>
+              <th>October</th>
+              <th>November</th>
+              <th>December</th>
+            <tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Projected</th>
+              <td>$820,180</td>
+              <td>$841,640</td>
+              <td>$732,270</td>
+            </tr>
+            <tr>
+              <th>Actual</th>
+              <td>$850,730</td>
+              <td>$892,580</td>
+              <td>$801,240</td>
+            </tr>
+            <tr>
+              <th>Utilization</th>
+              <td>83%</td>
+              <td>90%</td>
+              <td>75%</td>
+            </tr>
+          </tbody>
+        </table>
        
-
+        <div id="container" ></div>
+       
+       
       </div>
-     
+
     </div>
   </div>
   
-  <!-- Page 4 -->
-  <div class="section bg2">
+  <!-- Page 4 - Education -->
+  <div class="section ">
      <div class="revealUp">
 
-      <div class="hstack gapPG2">
+      <div class="hstack gapPG2 pageDisplay">
 
         <div class="vstack gapPG2Vstack center">
           <div class="waviy" >
@@ -169,10 +301,10 @@
           <div class="biggerline"></div>
         
           <div class="listItemPG2">Education is the process of acquiring knowledge, skills, values, and attitudes through formal and informal means. It is a lifelong journey that begins in early childhood and continues throughout our lives. Education equips us with the tools to understand the world around us, to think critically, and to make informed decisions. It allows us to explore our interests and passions, and to develop a sense of purpose and direction in life. </div>
-          <div class="listItemPG2"> Education is a catalyst for personal and social change, enabling us to contribute to our communities and to create a better future for ourselves and for others. As a writer, my education has been crucial in shaping my worldview and in providing me with the knowledge and skills to communicate my ideas effectively.</div>
+          
 
          
-          <div id="UbuttonBG" class="k-hover " >Show More...</div>
+          <div id="UbuttonBG" class="k-hover showButton" onclick="toggleShow(2)" >Show More...</div>
        
 
       </div>
@@ -181,78 +313,100 @@
           <img src="/Assets/Education.jpg" id="exprianceImg"> 
           
       </div>
-     
+
+      <!-- Timeline -->
+      <div class="vstack  gapPG2Vstack center displayStyle pageOffset">
+
+        <div class="hstack center"> 
+          <div class="vstack  center">
+            <div class="waviy" >
+              <span style="--i:1">E</span>
+              <span style="--i:2">D</span>
+              <span style="--i:3">U</span>
+              <span style="--i:4">C</span>
+              <span style="--i:5">A</span>
+              <span style="--i:6">T</span>
+              <span style="--i:7">I</span>
+              <span style="--i:8">O</span>
+              <span style="--i:9">N</span>
+            </div>
+            <div class="biggerline biglineOffset"></div>
+          </div>
+
+          <button id="customButton" class="material-symbols-rounded " onclick="toggleShow(2)">arrow_back</button>
+        </div>
+
+        <div class="timeline  " >
+
+          <a href="/Education/education.html">
+                
+        
+          <div class="timecontainer left k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/Education/Assets/Tri_C.jpg" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">Cuyahoga Community College  </div>
+                      <div  class="captionTime  clr5">⦿ Associate Of Science degree </div>
+                      <div  class="captionTime  clr5">-------- <b>2020</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </a>
+
+          <div class="timecontainer right k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/Education/Assets/OSU.jpg" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">Ohio State University  </div>
+                      <div  class="captionTime  clr5">⦿ BS in Computer Science and Engineering. </div>
+                      <div  class="captionTime  clr5">-------- <b>2022</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="timecontainer left k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap60px">
+                    <img src="/Education/Assets/WHS.jpg" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">Westlake High School  </div>
+                      <div  class="captionTime  clr5">⦿ High School Diploma </div>
+                      <div  class="captionTime  clr5">-------- <b>2019</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+
     </div>
   </div>
 
 
-
-
-  <div class="timeline" >
-
-    <a href="/Education/education.html">
-          
-   
-    <div class="timecontainer left k-hover">
-      <div class="content">
-        <div class="timeElement">
-            <div class="hstack gap40px">
-              <img src="/Education/Assets/Tri_C.jpg" id="timeImg">
-              <div class="vstack smallgapPG2 timeElementPos">
-                <div  class="titleTime  clr5">Cuyahoga Community College  </div>
-                <div  class="captionTime  clr5">⦿ Associate Of Science degree </div>
-                <div  class="captionTime  clr5">-------- <b>2020</b> --------</div>
-              </div>
-            </div>
-
-
-        </div>
-      </div>
-    </div>
-
-  </a>
-
-    <div class="timecontainer right k-hover">
-      <div class="content">
-        <div class="timeElement">
-            <div class="hstack gap40px">
-              <img src="/Education/Assets/OSU.jpg" id="timeImg">
-              <div class="vstack smallgapPG2 timeElementPos">
-                <div  class="titleTime  clr5">Ohio State University  </div>
-                <div  class="captionTime  clr5">⦿ BS in Computer Science and Engineering. </div>
-                <div  class="captionTime  clr5">-------- <b>2022</b> --------</div>
-              </div>
-            </div>
-
-
-        </div>
-      </div>
-    </div>
-    <div class="timecontainer left k-hover">
-      <div class="content">
-        <div class="timeElement">
-            <div class="hstack gap60px">
-              <img src="/Education/Assets/WHS.jpg" id="timeImg">
-              <div class="vstack smallgapPG2 timeElementPos">
-                <div  class="titleTime  clr5">Westlake High School  </div>
-                <div  class="captionTime  clr5">⦿ High School Diploma </div>
-                <div  class="captionTime  clr5">-------- <b>2019</b> --------</div>
-              </div>
-            </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
- <!-- Page 5 -->
- <div class="section bg1">
+ <!-- Page 5 - PortFolio -->
+ <div class="section">
   <div class="revealUp">
 
-    <div class="hstack gapPG2">
+    <div class="hstack gapPG2 pageDisplay">
 
       <img src="/Assets/Portfolio.jpg" id="exprianceImg"> 
 
@@ -272,23 +426,197 @@
         <div class="biggerline"></div>
       
         <div class="listItemPG2">A portfolio is a collection of work that showcases an individual's skills, experiences, and achievements. It serves as a tangible representation of one's abilities and can be used to demonstrate expertise in a particular field or to support applications for education or employment. A portfolio can take many forms, from a physical binder to a digital platform, and can include a variety of materials such as projects, artwork, or photographs.</div>
-        <div class="listItemPG2"> A well-crafted portfolio is an essential tool for any professional, as it allows them to showcase their work and to communicate their strengths and accomplishments to potential employers or clients. As a writer, my portfolio includes a range of writing samples that illustrate my versatility and expertise in different genres and styles.</div>
+       
 
-        <div id="UbuttonBG" class="k-hover">Show More...</div>
+        <div id="UbuttonBG" class="k-hover showButton" onclick="toggleShow(3)" >Show More...</div>
     </div>
 
      
 
     </div>
    
+
+    <!-- Timeline-1 -->
+    <div class="vstack  gapPG2Vstack center displayStyle pageOffset">
+
+      <div class="hstack center"> 
+        <div class="vstack  center">
+          <div class="waviy" >
+            <span style="--i:1">P</span>
+            <span style="--i:2">O</span>
+            <span style="--i:3">R</span>
+            <span style="--i:4">T</span>
+            <span style="--i:5">F</span>
+            <span style="--i:6">O</span>
+            <span style="--i:7">L</span>
+            <span style="--i:8">I</span>
+            <span style="--i:9">O</span>
+          </div>
+          
+          <div class="biggerline biglineOffset"></div>
+        </div>
+
+        <div class="vstack">
+        <button id="customButton" class="material-symbols-rounded " onclick="toggleShow(3)">arrow_back</button>
+        <button id="customButton" class="material-symbols-rounded " onclick="showNext(3)">arrow_forward</button>
+      </div>
+      </div>
+
+      <div class="timeline  " >
+
+        <a href="/Education/education.html">
+              
+      
+        <div class="timecontainer left k-hover ">
+          <div class="content">
+            <div class="timeElement">
+                <div class="hstack gap40px">
+                  <img src="/Portfolio/Assets/BusiLand.png" id="timeImg">
+                  <div class="vstack smallgapPG2 timeElementPos">
+                    <div  class="titleTime  clr5">BusiLand </div>
+                    <div  class="captionTime  clr5">⦿ 3D, Openworld Game which includes weapons, driving, businesses and much more. </div>
+                    <div  class="captionTime  clr5">-------- <b>2021</b> --------</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </a>
+
+        <div class="timecontainer right k-hover">
+          <div class="content">
+            <div class="timeElement">
+                <div class="hstack gap40px">
+                  <img src="/Portfolio/Assets/Brixy.png" id="timeImg">
+                  <div class="vstack smallgapPG2 timeElementPos">
+                    <div  class="titleTime  clr5"> Brixy </div>
+                    <div  class="captionTime  clr5">⦿ 2D Game which includes protecting your castle and destroying your enemy. </div>
+                    <div  class="captionTime  clr5">-------- <b>2020</b> --------</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="timecontainer left k-hover ">
+          <div class="content">
+            <div class="timeElement">
+                <div class="hstack gap60px">
+                  <img src="/Portfolio/Assets/FinalInstinct.png" id="timeImg">
+                  <div class="vstack smallgapPG2 timeElementPos">
+                    <div  class="titleTime  clr5">Final Instinct  </div>
+                    <div  class="captionTime  clr5">⦿ 2D game made using only UI system of unity where one have to guess a 'CORRECT' block.</div>
+                    <div  class="captionTime  clr5">-------- <b>2019</b> --------</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- Timeline-2 -->
+    <div class="vstack  gapPG2Vstack center displayStyle pageOffset">
+
+      <div class="hstack center"> 
+        <div class="vstack  center">
+          <div class="waviy" >
+            <span style="--i:1">P</span>
+            <span style="--i:2">O</span>
+            <span style="--i:3">R</span>
+            <span style="--i:4">T</span>
+            <span style="--i:5">F</span>
+            <span style="--i:6">O</span>
+            <span style="--i:7">L</span>
+            <span style="--i:8">I</span>
+            <span style="--i:9">O</span>
+          </div>
+          
+          <div class="biggerline biglineOffset"></div>
+        </div>
+
+        
+        <button id="customButton" class="material-symbols-rounded " onclick="showPrevious(4)">arrow_back</button>
+      </div>
+
+      <div class="timeline  " >
+
+        <a href="/Education/education.html">
+              
+      
+        <div class="timecontainer left k-hover ">
+          <div class="content ">
+            <div class="timeElement">
+                <div class="hstack gap40px">
+                  <img src="/Portfolio/Assets/ApplicationDev2.png" id="timeImg">
+                  <div class="vstack smallgapPG2 timeElementPos">
+                    <div  class="titleTime  clr5">News App </div>
+                    <div  class="captionTime  clr5">⦿ IOS app made with Swift UI and XCode.</div>
+                    <div  class="captionTime  clr5">-------- <b>2021</b> --------</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </a>
+
+        <div class="timecontainer right k-hover">
+          <div class="content ">
+            <div class="timeElement">
+                <div class="hstack gap40px">
+                  <img src="/Portfolio/Assets/AI.png" id="timeImg">
+                  <div class="vstack smallgapPG2 timeElementPos">
+                    <div  class="titleTime  clr5">News Sentiment Parser </div>
+                    <div  class="captionTime  clr5">⦿ AI model made using the data collected from the api using Python to determine its sentiment. </div>
+                    <div  class="captionTime  clr5">-------- <b>2022</b> --------</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="timecontainer left k-hover someRight">
+          <div class="content">
+            <div class="timeElement">
+                <div class="hstack gap60px">
+                  <img src="/Portfolio/Assets/java.png" id="timeImg">
+                  <div class="vstack smallgapPG2 timeElementPos">
+                    <div  class="titleTime  clr5">Java Projects </div>
+                    <div  class="captionTime  clr5">⦿ Projects made with java to showcase what I have learned during my time at OSU.  </div>
+                    <div  class="captionTime  clr5">-------- <b>2022</b> --------</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
   </div>
 </div>
 
-<!-- Page 6 -->
-<div class="section bg2">
+<!-- Page 6 - Current Projects-->
+<div class="section">
   <div class="revealUp">
-
-    <div class="hstack gapPG2">
+  <div class="pageDisplay"></div>
+    <div class="hstack gapPG2 pageDisplay">
 
       
       <div class="vstack gapPG2Vstack center">
@@ -321,7 +649,7 @@
         <div class="listItemPG2">Current projects refer to the ongoing initiatives that an individual or organization is working on at the present time. They are important because they represent the immediate priorities and goals of the individual or organization and reflect the current state of their work.</div>
         <div class="listItemPG2">Current projects enable individuals to focus their efforts and resources on achieving specific objectives, and provide a sense of direction and purpose. </div>
 
-        <div id="UbuttonBG" class="k-hover">Show More...</div>
+        <div id="UbuttonBG" class="k-hover showButton" onclick="toggleShow(5)" >Show More...</div>
       
 
       </div>
@@ -329,14 +657,169 @@
       <img src="/Assets/currentprojects.jpg" id="exprianceImg"> 
 
     </div>
+
+
+    
+      <!-- Timeline -->
+      <div class="vstack  gapPG2Vstack center displayStyle pageOffset">
+
+        <div class="hstack center"> 
+          <div class="vstack  center">
+            <div class="hstack smallgapPG2">
+              <div class="waviy" >
+                <span style="--i:1">C</span>
+                <span style="--i:2">u</span>
+                <span style="--i:3">R</span>
+                <span style="--i:4">r</span>
+                <span style="--i:5">e</span>
+                <span style="--i:6">n</span>
+                <span style="--i:7">t</span>
+               
+              </div>
+              <div class="waviy" >
+               
+                <span style="--i:8">p</span>
+                <span style="--i:9">r</span>
+                <span style="--i:10">o</span>
+                <span style="--i:11">j</span>
+                <span style="--i:12">e</span>
+                <span style="--i:13">c</span>
+                <span style="--i:14">t</span>
+                <span style="--i:15">s</span>
+              </div>
+            </div>
+            
+            <div class="biggerline biglineOffset"></div>
+          </div>
+
+          <button id="customButton" class="material-symbols-rounded " onclick="toggleShow(5)">arrow_back</button>
+        </div>
+
+        <div class="timeline  " >
+
+          <a href="/Education/education.html">
+                
+        
+          <div class="timecontainer left k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/CurrentProjects/Assets/ApplicationDev.png" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5"> IOS App  </div>
+                      <div  class="captionTime  clr5">⦿ Working on an IOS app that features: Market Analysis, News, social media and much more. </div>
+                      <div  class="captionTime  clr5">-------- <b>2022</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </a>
+
+          <div class="timecontainer right k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap40px">
+                    <img src="/CurrentProjects/Assets/TradingBot.png" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5">Trading Bot</div>
+                      <div  class="captionTime  clr5">⦿ Working on a trading bot which will be utilizing AI and RSI to determine best strategy to trade. </div>
+                      <div  class="captionTime  clr5">-------- <b>2023</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="timecontainer left k-hover">
+            <div class="content">
+              <div class="timeElement">
+                  <div class="hstack gap60px">
+                    <img src="/CurrentProjects/Assets/API.png" id="timeImg">
+                    <div class="vstack smallgapPG2 timeElementPos">
+                      <div  class="titleTime  clr5"> API development </div>
+                      <div  class="captionTime  clr5">⦿ Working on API that will take query and return a AI generated image based on that text. </div>
+                      <div  class="captionTime  clr5">-------- <b>2023</b> --------</div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
    
   </div>
 </div>
 
 <div class="spacer">
   <div class="customfooter">&copy; 2023 Naishal Patel</div>
+  
 </div>
 
+
+
+
+
+<!-- Radar Chart -->
+<script>
+ anychart.onDocumentReady(function () {
+  // our data from bulbapedia
+ var data1 = [
+   {x: "CSS", value: 0.6},
+   {x: " Python", value: 0.8},
+   {x: "Java", value: 2},
+   {x: "XCode", value: 2},
+   {x: "C#", value: 4},
+   {x: "R", value: 0.8},
+   {x: "HTML", value: 1},
+   {x: "Swift UI", value: 2},
+   {x: "Unity", value: 4},
+   {x: "MATLAB", value: 0.8}
+   
+ ];
+
+ 
+
+ // create radar chart
+ var chart = anychart.radar();
+
+ // set chart yScale settings
+ chart.yScale()
+   .minimum(0)
+   .maximum(5)
+   .ticks({'interval':0.5});
+
+  // color alternating cells
+  chart.yGrid().palette(["gray 0.1", "gray 0.2"]);
+
+  // create first series
+  chart.area(data1).name('Skills (years)').markers(true).fill("#E55934", 0.3).stroke("#E55934")
   
+
+  // set chart title
+  chart.title("")
+    // set legend
+    .legend(true);
+
+    chart.dataArea().background().enabled(false);
+   chart.background().fill(" #FFFEF9 1");
+   
+  // set container id for the chart
+  chart.container('container');
+  // initiate chart drawing
+  chart.draw();
+
+});
+</script>
+
 </body>
 </html>

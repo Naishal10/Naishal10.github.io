@@ -155,15 +155,14 @@ body {
 
 .icons{
 
-  width:80px;
+  width: 80px;
   height: 80px;
-
+   padding: 22px; 
   background-color: rgb(255, 254, 249);
-  border-radius: 20px;
+  border-radius: 15px;
 
  
 }
-
 
 
 .line {
@@ -179,6 +178,9 @@ body {
   left: -10px;
   top: -30px;
   
+}
+.biglineOffset{
+  top: 20px;
 }
 
 .listItemPos{
@@ -264,6 +266,11 @@ body {
   text-align: right;
 }
 
+.displayStyle{
+  display:  none;
+  animation: fade-bottom  1s ease;
+}
+
 .titlecolor{
   background-color: rgb(255, 254, 249);
 }
@@ -293,6 +300,7 @@ body {
 
 #UbuttonBG{
 
+  display: block;
   border-radius: 10px;
   background-color: rgb(241, 234, 255);
   max-width: 200px;
@@ -321,8 +329,13 @@ body {
 }
 .bg2 {
   background-color: rgb(255, 254, 249);
+  
 }
 
+.pageDisplay{
+  display: flex;
+  animation: fade-bottom  1s ease;
+}
 
 .spacer {
   height: 10vh;
@@ -456,6 +469,7 @@ border: 5px, rgb(255, 254, 249);
   height: 80px;
   border-radius: 50%;
   background-color:rgb(255, 254, 249);
+  box-shadow: 1px 1px 10px rgba(116, 116, 116, 0.5);
   color:  rgb(7, 7, 7);
   font-size: 20px;
   border: none;
@@ -549,18 +563,26 @@ padding-bottom: 150px;
 a {
 
   color:  rgb(255, 254, 249);
+  cursor: none;
 
 }
 
 
 /* Time Line Code */
+.pageOffset{
+
+  top: 150px;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
+  margin-top: 100px;
   margin-bottom: 200px;
+  
+  
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -578,7 +600,7 @@ a {
 
 /* Container around content */
 .timecontainer {
-  padding: 50px 40px;
+  padding: 30px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -600,9 +622,14 @@ a {
 
 /* Place the container to the left */
 .left {
-  left: -10px;
+  left: -220px;
   
 }
+
+.left::after {
+  left: 566px;
+}
+
 
 /* Place the container to the right */
 .right {
@@ -633,6 +660,7 @@ a {
   border-radius: 16px;
   box-shadow: 1px 1px 10px rgba(116, 116, 116, 0.5);
   align-items: center;
+  
 }
 
 #timeImg{
@@ -659,3 +687,49 @@ a {
   top: -10px;
 }
 
+/* Animation */
+
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+ /* Skill Chart */
+ #container {
+  width: 600px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  background-color:  rgba(116, 116, 116, 0.5);
+  
+  display: flex;
+  
+}

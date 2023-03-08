@@ -1,6 +1,6 @@
 /* Scroll Animation using GSAP */
 
-gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
 // REVEAL //
 gsap.utils.toArray(".revealUp").forEach(function (elem) {
   ScrollTrigger.create({
@@ -43,54 +43,8 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
   });
 });
 
-/* Custom Word Animation */
 
-/* var words = ['CODER/'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 300;
-var wordflick = function () {
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.word').text(part);
-  },speed);
-}; 
-$(document).ready(function () {
-  wordflick();
-});
-*/
+
 
 /* Custom Cursor */
 var kursorx = new kursor({
@@ -106,3 +60,57 @@ var kursorx1 = new kursor({
 
 
 /* Next Page section */
+function toggleShow(index){
+
+  
+  var imagfe = document.getElementsByClassName('displayStyle');
+ 
+  
+  var page = document.getElementsByClassName('pageDisplay');
+  
+  var displaySetting = imagfe[index].style.display;
+  
+  if(displaySetting=='block' || displaySetting=='flex'){
+
+    imagfe[index].style.display = 'none';
+  
+    page[index].style.display = 'flex';
+  }else{
+
+    imagfe[index].style.display = 'block';
+    page[index].style.display = 'none';
+    
+    
+  }
+
+ 
+
+}
+
+function showNext(index){
+
+  
+  var imagfe = document.getElementsByClassName('displayStyle');
+ 
+
+    imagfe[index].style.display = 'none';
+    imagfe[index+1].style.display = 'block';
+    
+  
+ 
+
+}
+
+function showPrevious(index){
+
+  
+  var imagfe = document.getElementsByClassName('displayStyle');
+ 
+    imagfe[index].style.display = 'none';
+    imagfe[index-1].style.display = 'block';
+    
+  
+
+ 
+
+}
