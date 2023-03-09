@@ -129,10 +129,10 @@ body {
 }
 
 #myimage {
-  height: 500px;
-  max-width: 500px;
+  height: auto;
+  max-width: 51.3%;
   position: absolute;
-  top: 336px;
+ 
   left: 0;
 }
 
@@ -145,7 +145,7 @@ body {
   background-color: rgb(226, 226, 226);
   box-shadow: 7px 7px 10px rgba(116, 116, 116, 0.5);
  
-  position: relative;
+  
   
   align-content: center;
   animation: fade-in 1s ease-out;
@@ -217,14 +217,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  
 }
 .hstack{
 
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+ 
 }
 
 .gapIcon-Info{
