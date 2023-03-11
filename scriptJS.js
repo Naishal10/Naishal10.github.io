@@ -51,6 +51,12 @@ var kursorx = new kursor({
   type: 4,
 })
 
+var kursorx1 = new kursor({
+  type: 4,
+  color:  rgb(255, 254, 249)
+
+})
+
 
 
 /* Next Page section */
@@ -103,3 +109,9 @@ function showPrevious(index){
     imagfe[index-1].style.display = 'block';
     
 }
+
+function alerting() {
+
+  alert("Working");
+}
+

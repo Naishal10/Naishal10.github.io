@@ -7,13 +7,6 @@
   letter-spacing: 0.04em;
 }
 
-*{
-  padding:0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
 
 a.active,a.hover{
   background: #1b9bff;
@@ -50,7 +43,7 @@ h1{
 body {
   background-color: rgb(255, 254, 249);
   background-size: 350% 350%;
-  animation: gradient 15s ease infinite;
+ 
   height: 100vh;
   font-family: 'Source Serif Pro', serif;
   font-weight: 300;
@@ -346,122 +339,10 @@ body {
 }
 
 
-/* EDucation HTML Page */
-
-.bgImage {
-
-   background-image: url("/Education/Assets/education.png");
-}
-.bgImage2 {
-
-  background-image: url("/Education/Assets/OSU.jpg");
-}
-
-.blur-bg {
- /*  background-image: url("/Education/Assets/Tri_C.jpg"); */
- 
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.blur-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-  linear-gradient(to bottom, #18181800 0%,  #181818 100%);
- 
-}
- 
-
-
-.bg3 {
-
-  background-color: #181818 ;
-  height: 85%;
-  z-index: 0;
-}
-
-.waviy2 {
-  position: relative;
-  
-}
-
-
-.waviy2 span {
-  position: relative;
-  display: inline-block;
-  font: 'Source Serif Pro' ;
-  font-size: 55px;
-  font-weight: bolder;
-  color: rgb(255, 254, 249);
-  text-transform: uppercase;
-  animation: flip 4s infinite;
-  animation-delay: calc(.4s * var(--i))
-}
-
-
-.line2 {
-  border-bottom: 1px solid  rgb(255, 254, 249);
-  width: 500px;
-}
-
-
-
-.title{
-
-  color:  rgb(255, 254, 249);
-
-}
-
-.caption{
-
-  color:  rgb(255, 254, 249);
-  font-size: 12;
-
-}
-
-.alignmentContent{
- 
- align-items: center;
-}
 
 .smallgapPG2{
 
   gap: 10px;
-}
-
-.contentBox{
-
-border: 5px, rgb(255, 254, 249);
-
-}
-
-.imageIcon{
-  border-radius: 20px;
-  width: 400px;
-  height: 260px;
-  text-align: right;
-  background: inherit;
- 
-
-  filter: brightness(70%);
-}
-
-
-.titlePos{
-
-  margin-top: 470px;
-  top: 100px;
 }
 
 #customButton{
@@ -476,6 +357,7 @@ border: 5px, rgb(255, 254, 249);
   left: 300px;
   top: 50px;
   font-size: 30px;
+  cursor: none;
 }
 
 #customButton:hover{
@@ -484,81 +366,17 @@ border: 5px, rgb(255, 254, 249);
 }
 
 
-.material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 200,
-  'opsz' 48
-}
 
 .gap40px{ gap: 40px; }
 .gap60px{ gap: 60px; }
 
-.listItemEduPG{
-
-  
-  font-size: 16px;
-  width: 600px;
-  text-align: left;
- 
-
-}
 
 
-
-.listItemCourses{
-
-  
-  font-size: 16px;
-  width: 170px;
-  text-align: center;
-  color: rgb(199, 255, 238);
-  border:  2px solid rgb(199, 255, 238);
-  padding: 7px;
-  border-radius: 10px;
-}
-
-.achievements{
-
-  font-size: 16px;
-  width: 600px;
-  text-align: center;
- 
-  border:  3px solid rgb(217, 209, 255);
-  padding: 7px;
-  border-radius: 10px;
-
-}
-
-.clr1{
-  color:  rgb(217, 209, 255);
-}
-.clr2{
-  color:  rgb(255, 207, 230);
-}
-.clr3{
-  color: rgb(255, 254, 249);
-}
-.clr4{
-  color: rgb(255, 187, 187);
-}
 .clr5{
   color: rgb(0, 0, 0);
 }
 
-.contentPosPGEdu{
 
-padding-top: 150px;
-padding-bottom: 150px;
-}
-
-.customSUbSec{
-
-  font-size: 20px;
-  color:  rgb(255, 254, 249);
-
-}
 
 a {
 
@@ -700,27 +518,7 @@ a {
     opacity: 1;
   }
 }
-@keyframes fade-left {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-@keyframes fade-right {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
  /* Skill Chart */
  #container {
@@ -733,6 +531,4 @@ a {
   display: flex;
   
 }
-.show{
-  display: "block";
-}
+
