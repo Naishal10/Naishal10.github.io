@@ -61,15 +61,11 @@ html{
   }
 }
 
-.newClass {
-  cursor: none;
-}
+.newClass { cursor: none; }
 
 /*Other Page*/
 
-.alignContentCenter{
-    align-items: center;
-}
+.alignContentCenter{ align-items: center;}
 
 
 #exprianceImg {
