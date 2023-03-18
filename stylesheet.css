@@ -96,7 +96,7 @@ body {
 
 #myimage {
   height: auto;
-  max-width: 51%;
+  max-width: 53%;
  
 }
 
@@ -126,11 +126,11 @@ body {
  
 }
 
-#infoBox{padding : 1.4vw;}
+#infoBox{padding : 1.2vw;}
 
 .line {
   border-bottom: 1px solid black;
-  width: 32vw;
+  width: 31vw;
   left: -10px;
   top: -30px;
   
