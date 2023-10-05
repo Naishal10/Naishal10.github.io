@@ -35,7 +35,7 @@
 
 	<!-- GLOBAL NAVIGATION -->
     
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
       <!-- BRAND TEXT/IMAGE -->
       <div class="d-flex align-items-center">
@@ -66,15 +66,11 @@
       <!-- NAV ITEMS -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item me-3">
-            <a class="nav-link active" aria-current="page" href="#">Education</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item me-3"><a class="nav-link" href="#">Experience</a></li>
-          <li class="nav-item me-3"><a class="nav-link" href="#">Portfolio</a></li>
-          <li class="nav-item me-3"><a class="nav-link" href="#">Current Projects</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#EDU">Education</a> </li>
+          <li class="nav-item me-3"><a class="nav-link" href="#SKL">Skills</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#EXP">Experience</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#POR">Portfolio</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#CUP">Current Projects</a></li>
         </ul>
       </div>
     </div>
@@ -82,8 +78,8 @@
 
 
 
-    <!-- END GLOBAL NAVIGATION -->
 
+  
   <!-- Landing Page -->
   <div class="container-fluid vh-90 d-flex justify-content-center align-items-center rounded-10 mt-5 mb-5" >
     <div class="card custom-shadow" style="width: 95%; height: 90%;">
@@ -103,6 +99,7 @@
                 <img src="./Assets/Icons/github.png" alt="GitHub Icon">
               </button>
             </a>
+            
             <a href="https://osu.joinhandshake.com/stu/users/37134658" >
               <button type="button" class="btn btn-outline-secondary me-4 p-3">
                 <img src="./Assets/Icons/handshake.png" alt="Handshake Icon">
@@ -127,7 +124,7 @@
             
             <!-- Bottom Section for Card Content -->
             
-              <div class="card text-white bg-secondary" style="max-width: 41rem; margin-top: 3rem; margin-bottom: 3rem; opacity: 0.8;">
+              <div class="card text-white bg-secondary  m-4" style=" opacity: 0.8;">
                 <div class="card-header">
                   <div class="waviy fontWaviy" style="color:whitesmoke;">
                     <span style="--i:1">A</span>
@@ -163,11 +160,11 @@
 
 
 
-
+  <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
 	<!-- CENTERED Education -->
 	
-  <div class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center revealUp pageDisplay" style="width:100%; height: 100%;">
+  <div id= "EDU" class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center revealUp pageDisplay" style="width:100%; height: 100%;">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-bottom">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="Assets/Education.jpg" class="d-block mx-lg-auto img-fluid custom-img rounded-5" alt="..." width="600" height="400" loading="lazy">
@@ -269,9 +266,9 @@
 
 
 
-	<!-- CENTERED HERO -->
+	<!-- CENTERED Skills -->
 	
-  <div class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
+  <div id= "SKL" class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
     <div class="row align-items-center g-5 py-5 border-bottom">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="Assets/Skills.jpg" class="d-block mx-lg-auto img-fluid custom-img rounded-5" alt="..." width="600" height="400" loading="lazy">
@@ -403,7 +400,7 @@
 
 <!-- CENTERED EXPERIANCE -->
 	
-<div class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
+<div id="EXP" class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-bottom">
     <div class="col-10 col-sm-8 col-lg-6">
       <img src="Assets/Experiance1.jpg" class="d-block mx-lg-auto img-fluid custom-img rounded-5" alt="..." width="600" height="400" loading="lazy">
@@ -596,9 +593,9 @@
 
 
  
-<!-- CENTERED HERO -->
+<!-- CENTERED Portfolio -->
 
-<div class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
+<div id="POR" class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
   <div class="row align-items-center g-5 py-5 border-bottom">
     <div class="col-10 col-sm-8 col-lg-6">
       <img src="Assets/Portfolio.jpg" class="d-block mx-lg-auto img-fluid custom-img rounded-5" alt="..." width="600" height="400" loading="lazy">
@@ -661,20 +658,20 @@
                   <div class="row">
                      <!-- Why Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-success"style="width: 140px; height: 80px;"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a 3D multiplayer, open-world game inspired by GTA V with fantasy elements, featuring a business system and ML agents.">
+                      <button type="button" class="btn btn-success"style="width: 6vw; height: 4vw;"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a 3D multiplayer, open-world game inspired by GTA V with fantasy elements, featuring a business system and ML agents.">
                         What
                       </button>
                       
                     </div>
                     <!-- How Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-warning" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Leveraged Unity's extensive toolkit and asset store, incorporating Dotween for animations, ML-Agents for enemy AI, the new DOTS system for performance, Burst compiler for 3D optimization, and Shader Graph for enhanced graphics.">
+                      <button type="button" class="btn btn-warning" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Leveraged Unity's extensive toolkit and asset store, incorporating Dotween for animations, ML-Agents for enemy AI, the new DOTS system for performance, Burst compiler for 3D optimization, and Shader Graph for enhanced graphics.">
                         How
                       </button>
                     </div>
                     <!-- What Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-info" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved a smooth gameplay experience with an average of 78 FPS on standard PCs, despite the expansive 3D world.">
+                      <button type="button" class="btn btn-info" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved a smooth gameplay experience with an average of 78 FPS on standard PCs, despite the expansive 3D world.">
                         Result
                       </button>
                     </div>
@@ -703,20 +700,20 @@
                   <div class="row">
                      <!-- Why Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-success"style="width: 140px; height: 80px;"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a 3D multiplayer, open-world game inspired by GTA V with fantasy elements, featuring a business system and ML agents.">
+                      <button type="button" class="btn btn-success"style="width: 6vw; height: 4vw;"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a 3D multiplayer, open-world game inspired by GTA V with fantasy elements, featuring a business system and ML agents.">
                         What
                       </button>
                       
                     </div>
                     <!-- How Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-warning" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Leveraged Unity's extensive toolkit and asset store, incorporating Dotween for animations, ML-Agents for enemy AI, the new DOTS system for performance, Burst compiler for 3D optimization, and Shader Graph for enhanced graphics.">
+                      <button type="button" class="btn btn-warning" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Leveraged Unity's extensive toolkit and asset store, incorporating Dotween for animations, ML-Agents for enemy AI, the new DOTS system for performance, Burst compiler for 3D optimization, and Shader Graph for enhanced graphics.">
                         How
                       </button>
                     </div>
                     <!-- What Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-info" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved a smooth gameplay experience with an average of 78 FPS on standard PCs, despite the expansive 3D world.">
+                      <button type="button" class="btn btn-info" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved a smooth gameplay experience with an average of 78 FPS on standard PCs, despite the expansive 3D world.">
                         Result
                       </button>
                     </div>
@@ -747,20 +744,20 @@
                   <div class="row">
                      <!-- Why Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-success"style="width: 140px; height: 80px;"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a 3D multiplayer, open-world game inspired by GTA V with fantasy elements, featuring a business system and ML agents.">
+                      <button type="button" class="btn btn-success"style="width: 6vw; height: 4vw;"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a 3D multiplayer, open-world game inspired by GTA V with fantasy elements, featuring a business system and ML agents.">
                         What
                       </button>
                       
                     </div>
                     <!-- How Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-warning" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Leveraged Unity's extensive toolkit and asset store, incorporating Dotween for animations, ML-Agents for enemy AI, the new DOTS system for performance, Burst compiler for 3D optimization, and Shader Graph for enhanced graphics.">
+                      <button type="button" class="btn btn-warning" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Leveraged Unity's extensive toolkit and asset store, incorporating Dotween for animations, ML-Agents for enemy AI, the new DOTS system for performance, Burst compiler for 3D optimization, and Shader Graph for enhanced graphics.">
                         How
                       </button>
                     </div>
                     <!-- What Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-info" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved a smooth gameplay experience with an average of 78 FPS on standard PCs, despite the expansive 3D world.">
+                      <button type="button" class="btn btn-info" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved a smooth gameplay experience with an average of 78 FPS on standard PCs, despite the expansive 3D world.">
                         Result
                       </button>
                     </div>
@@ -791,7 +788,7 @@
                   <div class="row">
                      <!-- Why Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-success" style="width: 140px; height: 80px; " data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a news app in Swift UI that integrates a CoreML sentiment model, serving as the foundation for the next market research and analysis app.">
+                      <button type="button" class="btn btn-success" style="width: 6vw; height: 4vw; " data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Developed a news app in Swift UI that integrates a CoreML sentiment model, serving as the foundation for the next market research and analysis app.">
                         What
                       </button>
                       
@@ -799,13 +796,13 @@
                     </div>
                     <!-- How Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-warning" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Employed Combine for API management, utilized Polygon API for news data, integrated CoreML for sentiment analysis, and built the app using Swift UI.">
+                      <button type="button" class="btn btn-warning" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Employed Combine for API management, utilized Polygon API for news data, integrated CoreML for sentiment analysis, and built the app using Swift UI.">
                         How
                       </button>
                     </div>
                     <!-- What Section -->
                     <div class="col">
-                      <button type="button" class="btn btn-info" style="width: 140px; height: 80px;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved 95% user satisfaction in UI through surveys and optimized rendering speed by 50% using Swift UI's LazyHStack and LazyVGrid, resulting in lag-free scrolling.">
+                      <button type="button" class="btn btn-info" style="width: 6vw; height: 4vw;" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Achieved 95% user satisfaction in UI through surveys and optimized rendering speed by 50% using Swift UI's LazyHStack and LazyVGrid, resulting in lag-free scrolling.">
                         Result
                       </button>
                     </div>
@@ -999,9 +996,9 @@
   </div>
 </div>
 
+<!-- CENTERED Current Projects -->
 
-
-<div class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
+<div id="CUP" class="container-fluid g-5 vh-100 d-flex justify-content-center align-items-center  revealUp pageDisplay" style="width:100%; height: 100%;">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-bottom">
     <div class="col-10 col-sm-8 col-lg-6">
       <img src="Assets/currentprojects.jpg" class="d-block mx-lg-auto img-fluid custom-img rounded-5" alt="..." width="600" height="400" loading="lazy">
@@ -1037,6 +1034,7 @@
   </div>
 </div>
 
+  </div>
 
 <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasCurPro" aria-labelledby="offcanvasBottomLabel" style="height: 400px; background-color: rgb(39, 42, 45); ">
   <div class="offcanvas-body small p-0 m-0" >
@@ -1053,15 +1051,39 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="./Portfolio/Assets/BG1.jpeg" class="d-block w-100 responsiveMain" alt="..." >
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <div class="row">
+                <div class="col">
+                  <img src="./CurrentProjects/Assets/TradingBot.png" alt="Your Image" style="max-width: 500px; height: 300px;"> 
+                  
+                </div>
+                <div class="col mt-5" style="color: azure;">
+
+                  <button class="btn btn-outline-warning customFont mb-5  px-4" style="border-radius: 25px;">AI Trading Bot</button>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull;Developing a cutting-edge trading bot in Python that leverages artificial intelligence.</p>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull;Utilizes advanced trading strategies involving Relative Strength Index (RSI) and Moving Average Convergence Divergence (MACD).</p>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull;Incorporates real-time news updates to adapt its strategies and capitalize on market opportunities.</p>
+                 
+                </div>
+              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img src="./Portfolio/Assets/BG2.jpeg" class="d-block w-100 responsiveMain" alt="..." >
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <div class="row">
+                <div class="col">
+                  <img src="./CurrentProjects/Assets/API.png" alt="Your Image" style="max-width: 500px; height: 300px;"> 
+                  
+                </div>
+                <div class="col mt-5" style="color: azure;">
+                  
+                  <button class="btn btn-outline-warning customFont mb-5  px-4" style="border-radius: 25px;">Social Media Network System</button>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull;Working on a sophisticated social media network system designed to curate personalized feeds for users.</p>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull;The system returns a JSON of feed data that is generated based on labeled data sets.</p>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull;Incorporates machine learning algorithms to match and display content that aligns with the user's interests.</p>
+                  
+                </div>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -1070,14 +1092,17 @@
       
               <div class="row">
                 <div class="col">
-                  <h5>lets slide label</h5>
+                  <img src="./CurrentProjects/Assets/ApplicationDev.png" alt="Your Image" style="max-width: 500px; height: 300px;"> 
                   
                 </div>
-                <div class="col">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <div class="col mt-5" style="color: azure;">
+                  
+                  <button class="btn btn-outline-warning customFont mb-5  px-4" style="border-radius: 25px;">Improving Noise Reduction AI</button>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull; Focused on enhancing a noise reduction AI model, trained on a dataset provided by the DNS Challenge.</p>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull; Utilizing Python for the core development and machine learning algorithms.</p>
+                  <p class="ms-3" style="text-indent: -1em; text-align: start;">&bull; Studying and learning from past work done by others in the field to improve the model's efficiency and effectiveness.</p>
                 </div>
-               </div>
+              </div>
             </div>
           </div>
          
@@ -1156,7 +1181,7 @@
 <div class="container-fluid g-5">
   <div class="row">
     <div class="col-4 themed-grid-col"></div>
-    <div class="col-4 themed-grid-col"> ©Naishal Patel</div>
+    <div class="col-4 themed-grid-col"> ©2023 Naishal Patel</div>
     <div class="col-4 themed-grid-col"> Go To Top ^</div>
   </div>
 </div>
