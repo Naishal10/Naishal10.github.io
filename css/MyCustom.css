@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+
+html{scroll-behavior: smooth;}
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+	100% { background-position: 50px 50px; }
+}
+@-moz-keyframes    bg-scrolling-reverse {
+	100% { background-position: 50px 50px; }
+}
+@-o-keyframes      bg-scrolling-reverse {
+	100% { background-position: 50px 50px; }
+}
+@keyframes         bg-scrolling-reverse {
+	100% { background-position: 50px 50px; }
+}
+
+@-webkit-keyframes bg-scrolling {
+	0% { background-position: 50px 50px; }
+}
+@-moz-keyframes    bg-scrolling {
+	0% { background-position: 50px 50px; }
+}
+@-o-keyframes      bg-scrolling {
+	0% { background-position: 50px 50px; }
+}
+@keyframes         bg-scrolling {
+	0% { background-position: 50px 50px; }
+}
+
+/* Main styles */
+body {
+
+
+	color: #999;
+
+	text-align: center;
+	/* img size is 50x50 */
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+
+	-webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+	-moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+	-o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+	animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function:    linear;
+	-o-animation-timing-function:      linear;
+	animation-timing-function:         linear;
+
+
+}
+
+
+
+/*Animation Title*/
+.waviy { position: relative;}
+
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  
+  text-transform: uppercase;
+  animation: flip 4s infinite;
+  animation-delay: calc(.4s * var(--i))
+}
+
+.waviyName {
+  font-size: 20px;
+  font-family: 'IBM Plex Serif', serif;
+  color: #787878;
+  font-weight: bolder;
+
+}
+.fontWaviy {
+  font-size: 40px;
+  font-family: 'IBM Plex Serif', serif;
+  color: #474747;
+  font-weight: bold;
+}
+
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+
+.custom-shadow {
+	box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+	position: relative;  /* Make the card position relative */
+}
+
+.button-container {
+  position: absolute;  /* Make the button container position absolute */
+  top: 0;
+  left: 0;
+  z-index: 1;  /* Place it above the card content */
+}
+
+.btn img {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+.btn img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255); /* White color with 50% opacity */
+  z-index: 1;
+}
+
+
+.custom-img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;  /* cover, contain, fill, none, scale-down */
+}
+
+
+/* Skill Chart */
+#container {
+  width: 600px;  
+  height: 600px;
+  object-fit: scale-down;
+  margin: 0;
+  padding: 0;
+  background-color:  rgba(116, 116, 116, 0.5);
+  
+  display: flex;
+  
+}
+
+.pageDisplay{
+ 
+  animation: fade-bottom  2s ease;
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.customFont {
+  font-size: 16px;
+  font-family: 'IBM Plex Serif', serif;
+  font-weight:400;
+}
+
+
+.card-with-gap {
+  margin-bottom: 20px;
+}
+
+.experienceCard {
+  width: 550px;
+  height: 200px;
+}
+
+
+.customOffCanvas {
+  background-color: rgb(45, 50, 52);
+  height: 400px;
+  overflow-x: scroll;
+}
+
+/*This is for Education Cards*/
+.custom-card {
+  width: 500px;
+  height: 240px;
+  border-radius: 20px;
+}
+
+.custom-imgEdu {
+  width: 500px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(50%);
+}
+
+.custom-overlay {
+  width: 500px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#light-button {
+  color: #999;
+  border-color: #999;
+}
+
+
+.takeaway {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.takeaway.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Media Query */
+
+@media (max-width: 576px) {
+  #container {
+    width: 420px;
+    height: 420px;  
+  }
+
+  .custom-card,
+  .custom-imgEdu,
+  .custom-overlay {
+    width: 400px;
+    height: 240px;
+  }
+}
